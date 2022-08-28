@@ -5,6 +5,7 @@ router.get('/',(req,res)=>{
 
     res.send("hey there")
 })
+//users routes to get users
 
 
 module.exports=router
