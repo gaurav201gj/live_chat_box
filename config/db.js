@@ -12,14 +12,7 @@ const pool = mysql.createPool({
     port: 3369
 });
 
-let sql = 'SELECT * FROM users;';
-
-pool.execute(sql, (err, result) => {
-    if (err) {
-        throw err
-    }
-    console.log(result);
-})
 
 
-module.exports = pool.promise()
+
+module.exports = pool
